@@ -141,24 +141,31 @@
                             </div>
                             <div class="col-12">
                                 <h5 class="my-4 text-danger text-center">Budget</h5>
-                                <div class="d-flex">
-                                    <span class="px-3">Player: </span>
-                                    <input id="player-price" class="mb-3 text-center" type="text">
+                                <div class="">
+                                   <div class="d-flex">
+                                    <span class="px-3"> Per Player: </span>
+                                    <input id="per-player" class="mb-3 text-center" type="text" value="1000">
+                                   </div>
+                                   <hr>
+                                    <div class="d-flex mt-2">
+                                        <span class="px-3"> Player: </span>
+                                        <input id="player-price" class="mb-3 text-center" type="text">
+                                    </div>
                                 </div>
                                 <div class="text-center">
                                     <button id="calculate" type="button" class="btn btn-primary px-4 py-2 mb-3 ms-3">Calculate</button>
                                 </div>
                                 <div class="mt-3 d-flex">
                                     <span class="px-3">Expenses: </span>
-                                    <input id="expenses" class="mb-3 text-center budget" type="text">
+                                    <input id="expenses" class="mb-3 text-center budget" type="text" value="3000">
                                 </div>
                                 <div class="d-flex">
                                     <span class="px-3">Manager: </span>
-                                    <input id="manager" class="mb-3 text-center budget" type="text">
+                                    <input id="manager" class="mb-3 text-center budget" type="text" value="1200">
                                 </div>
                                 <div class="d-flex">
                                     <span class="px-4">Coach: </span>
-                                    <input id="coach" class="mb-3 text-center budget" type="text">
+                                    <input id="coach" class="mb-3 text-center budget" type="text" value="1000">
                                 </div>
                                 <div class="text-center">
                                     <button id="calculate-total" type="button" class="btn btn-primary px-4 py-2 mb-3 ms-3">Calculate Total</button>

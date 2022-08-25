@@ -16,7 +16,7 @@ body{
     color: greenyellow;
 }
 input{
-    width: 80%;
+    max-width: 80%;
 }
 footer{
     background-color: black;

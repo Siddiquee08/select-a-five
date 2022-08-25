@@ -18,10 +18,15 @@ function display(names) {
 }
 
 function addToSelect(click) {
+    
+    click.parentNode.children[2].setAttribute('disabled', true);
+    
     const playerName = click.parentNode.children[0].innerText
     
     selected.push(playerName)
+    
     const totalPlayer = document.getElementById('total-player')
+
 
     if (selected.length > 5) {
         
@@ -31,18 +36,31 @@ function addToSelect(click) {
     else {
        
         totalPlayer.innerText = selected.length
+        
         display(selected)
     }
-
-    return (selected.length)
     
 }
 
+let playerPriceFinal;
 
 document.getElementById('calculate').addEventListener('click', function(){
 
-    const playerPrice = document.getElementById('player-price')
+    const playerPrice = document.getElementById('per-player')
 
-    const playerPriceInput = parseInt(playerPrice.value)
-    console.log(playerPriceInput)
+    const perPlayerPriceInput = parseInt(playerPrice.value)
+    
+    const playerNumber = selected.length
+    
+    playerPriceFinal = perPlayerPriceInput * playerNumber
+   
+    const playerPriceTotal = document.getElementById('player-price')
+
+    playerPriceTotal.value = playerPriceFinal
+})
+
+document.getElementById('calculate-total').addEventListener('click', function () {
+    
+
+
 })
