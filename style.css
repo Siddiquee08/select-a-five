@@ -11,6 +11,9 @@
 .banner-head {
     color: greenyellow;
 }
+input{
+    width: 80%;
+}
 footer{
     background-color: black;
 }
@@ -20,9 +23,6 @@ footer{
 }
 #calculate-total{
     font-size: 1.23vh;
-}
-input{
-    width: 90%;
 }
 
 @media (max-width: 576px){
