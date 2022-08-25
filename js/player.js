@@ -53,14 +53,38 @@ document.getElementById('calculate').addEventListener('click', function(){
     const playerNumber = selected.length
     
     playerPriceFinal = perPlayerPriceInput * playerNumber
+    console.log(playerPriceFinal)
    
     const playerPriceTotal = document.getElementById('player-price')
 
-    playerPriceTotal.value = playerPriceFinal
+   playerPriceTotal.value = playerPriceFinal
 })
 
 document.getElementById('calculate-total').addEventListener('click', function () {
     
+    const expenses = document.getElementById('expenses')
+    
+    const expensesInt = parseInt(expenses.value)
+    console.log(expensesInt)
+    
+    const manager = document.getElementById('manager')
+    const managerInt = parseInt(manager.value)
+    console.log(managerInt)
+    
+    const coach = document.getElementById('coach')
+    const coachInt = parseInt(coach.value)
+    console.log(coachInt)
+    
+    const totalPrice = playerPriceFinal + expensesInt + managerInt + coachInt
 
+    if (isNaN(totalPrice)) {
+        alert("Press Caluculate and Proceed")
+    }
+    else {
+        const total = document.getElementById('total')
+    const totalValue = parseInt(total.innerText)
 
+    total.innerText = totalPrice
+    }
+    
 })
