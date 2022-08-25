@@ -7,6 +7,10 @@
 .banner{
     background-color: black;
 }
+
+.banner-head {
+    color: greenyellow;
+}
 footer{
     background-color: black;
 }
@@ -26,6 +30,6 @@ input{
     font-size: 2.3vh;
 }
 .banner-txt {
-    font-size: 1.4vh;
+    font-size: 2vh;
 }
 }
