@@ -88,3 +88,10 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     }
     
 })
+
+document.getElementById('reset').addEventListener('click', function () {
+    const total = document.getElementById('total')
+    const totalInput = total.innerText
+    total.innerText = "00"
+    
+})
