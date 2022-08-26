@@ -94,4 +94,9 @@ document.getElementById('reset').addEventListener('click', function () {
     const totalInput = total.innerText
     total.innerText = "00"
     
+    const playerPriceTotal = document.getElementById('player-price')
+
+   playerPriceTotal.value = "00"
+
+    
 })
